@@ -9,7 +9,7 @@
         <%= message.body %>
         <span class="badge"><%= message.age %></span>
         (<%= link_to "edit" , edit_message_path(message) %>
-         <%= link_to "destroy" , message , method: :delete, data: { confirm: '削除してもよろしいですか？' } %>
+         <%= link_to "delete" , message , method: :delete, data: { confirm: '削除してもよろしいですか？' } %>
         )
       <br>
     <% end %>
